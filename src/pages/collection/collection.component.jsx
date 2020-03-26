@@ -2,12 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import CollectionItem from '../../components/collection-item/collection-item.component';
+
 import { selectCollection } from '../../redux/shop/shop.selector';
 
 import './collection.styles.scss';
 
 const CollectionPage = ({ collection }) => {
     const { title, items } = collection;
+    console.log(items)
     return (
     <div className='collection-page'>
         <h2 className='title'>{ title }</h2>
